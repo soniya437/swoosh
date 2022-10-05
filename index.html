@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Sorting</Title>
+    </head>
+    <body>
+        <p><b>SORTING</b></p>
+        <p>Ascending Order </p>
+        <div id="ascending"> </div>
+
+        <br><br>
+
+        <p>Descending Order </p>
+        <div id="descending"> </div>
+        <script>
+
+            var c = [3,7,9,2,6,4];
+            d = c.sort(asc);
+            document.write(d)
+
+
+            function asc(a,b){
+                return a-b
+            }
+
+            document.getElementById("ascending").innerHTML = c;
+        
+
+            var k = [3,7,9,2,6,4];
+            l = k.sort(des);
+
+
+            function des(a,b){
+                return b-a
+            }
+
+            document.getElementById("descending").innerHTML = k
+
+
+
+
+
+        </script>
+
+    </body>
+</html>
